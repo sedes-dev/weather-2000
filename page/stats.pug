@@ -1,0 +1,22 @@
+doctype
+html(lang="pl")
+  head
+    title weather-2000 stats
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    style
+      include ./stats.css
+  body
+    .page
+      h1  sedes.dev stats
+      h2 #{new Date(stats.date).toLocaleDateString()}
+      each route in stats.routes
+        section
+          h3 #{route.name}
+          table
+            tr
+              th Time
+              th Visits
+            each count, index in route.counts
+              tr
+                td #{index}:00 - #{index}:59
+                td.visits #{count}

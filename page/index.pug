@@ -1,0 +1,31 @@
+doctype 
+html 
+  head
+    title Mapa Pogodowa Polski 2000 | Made by sedes.dev
+    meta(charset="UTF-8")
+    meta(name="description" content="Mapa pogodowa polski na Twoją stronę! - pogoda2000.sedes.dev")
+    meta(name="keywords" content="pogoda, mapa, polska")
+    meta(name="author" content="sedes.dev")
+    link(rel="icon" type="image/x-icon" href="/assets/favicon.png")
+    style
+      include styles.css
+  body
+    main
+      h1 Mapa Pogodowa Polski 2000
+      p.center Gadżet o którym zawsze mażyłeś, już teraz i za darmo do wykorzystania na Twojej stronie www - <strong>MAPA POGODOWA!!!</strong>
+      p.center Żadnych skomplikowanych jawaskryptów, styli css, po prostu dodajesz obrazek z odpowiednim atrybutem src i cieszysz się aktualną prognozą pogody na swojej stronie!
+      img.map(src="/map/regular.gif" loading="lazy" width="500px" height="500px")
+      h2 Instalacja
+      p Po prostu skopiuj kod html i dodaj gdzieś na swojej stronie.
+      P Wersja 500px na 500px:
+      pre &lt;img src="https://pogoda2000.sedes.dev/map/regular.gif"&gt;
+      p Wersja 200px na 200px:
+      pre &lt;img src="https://pogoda2000.sedes.dev/map/small.gif"&gt;
+      h2 Info 
+      p Obrazek jest aktualizowany co godzinę, dane pogodowe pochodzą z API open-meteo.com. Repozytorium 
+       a(href="https://github.com/sedes-dev/weather-2000" target="_blank") tutaj.
+    footer 
+      span made with 💩 by 
+        |
+        a(href="https://sedes.dev" target="_blank") sedes.dev
+      
