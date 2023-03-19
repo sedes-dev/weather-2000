@@ -38,6 +38,7 @@ p.center {
 
 img.map {
   max-width: 500px;
+  width: 100%;
   display: block;
   margin: 20px auto;
 }
